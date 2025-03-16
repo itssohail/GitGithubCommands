@@ -1,5 +1,4 @@
-"use strict";
-
-document.querySelector("body").addEventListener("click", function () {
-  alert("Welcome to git github practice repository");
+document.getElementById("highlight-btn").addEventListener("click", function () {
+  const commands = document.querySelectorAll("#commands-list li");
+  commands.forEach((cmd) => (cmd.style.backgroundColor = "#ffe599"));
 });
